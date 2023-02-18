@@ -1,0 +1,19 @@
+[
+    {"q1": "What are your 3 primary colors and how do you get them?", "a1":"red, yellow, blue - laws of color, default"},
+    {"q2": "What are your 3 secondary colors and how do you get them?", "a2":"orange, green, violet, mixing a primary color with the one next to it"},
+    {"q3": "How do you get tertiary colors?", "a3":"mixing a primary color with a secondary color beside it in equal amounts"},
+    {"q4": "Blue and red mixed in even amounts create what color?", "a4":"violet"},
+    {"qS": "What factors contribute to the final outcome of the hair color?", "a5":"Hair texture, density, porosity, natural hair color, contributing pigment, and hair color product"},
+    {"q6": "How many levels are in the level system?", "a6":"1-10"},
+    {"q7": "What is another word for a client's natural color of hair?", "a7":"Hue"},
+    {"q8": "What are the 4 types of hair color?", "a8":"temporary, semi-permanent, demi-permanent and permanent"},
+    {"q9": "How many shampoos does it take to remove a temporary hair dye?", "a9":"One shampoo"},
+    {"q10": "What is the main difference between a semi and demi permanent color?", "a10":"Semi's last about six to eight shampoos and are also used directly from the bottle because there is no mixing required. Demi-permanent hair colors use a developer"},
+    {"q11": "What is an aniline derivative?", "a11":"product found in all permanent hair color products that tell the particles to get big once inside the cortex"},
+    {"q12": "What 2 products use a developer?", "a12":"demi-permanent and permanent use a developer"},
+    {"q13": "What is the range of the level system?", "a12":"shows the light or darkness level of the hair ranging from 1-10. 1 on the level system is black and 10 is lightest blonde"},
+    {"q14": "What is the difference between a dye remover and a stain remover?", "a12":"dye remover removes artificial pigments from the hair and a stain remover which is used when a color has spilled on a client's skin and you need to remove it."},
+    {"q15": "List some of the ways you can apply highlights/lowlights?", "a12":"ways to color are the cap, foil and freeform techniques."},
+    {"q16": "What is the difference between highlights and lowlights?", "a12":"Highlights color lighter strands in overall dark hair. Lowlights put dark streaks in typically overall lighter hair"}
+]
+

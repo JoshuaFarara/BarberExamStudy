@@ -1,0 +1,18 @@
+[
+    {"q1": "What is the difference between a tool and an implement?", "a1":"tools have motors, implements do not such as combs, brushes, clips shears"},
+    {"q2": "What would be considered equipment?", "a2":"other items in the shop, chairs, shampoo bowls, capes"},
+    {"q3": "What type of comb is used for parting the hair?", "a3":"rattail combs"},
+    {"q4": "What type of comb is good for blending?", "a4":"taper comb, different size teeth on both ends"},
+    {"qS": "What brushes are used to blow-dry the hair?", "a5":"vent-holes/slits in the back and round brushes- revved like motorcycle handle"},
+    {"q6": "What is the preferred size of the shears?", "a6":"6.5 to 7.5"},
+    {"q7": "What are brushes made of?", "a7":"bristles, made of boar, plastic or metal"},
+    {"q8": "Name the parts of the clippers.", "a8":"adjustment lever, moving/cutting blade, still blade, heel, on and off switch and your set screw"},
+    {"q9": "Name the parts of the shears.", "a9":"thumb grip on moving blade, and still blade, pivot screw"},
+    {"q10": "How often should you change your wet sanitizer solution?", "a10":"daily"},
+    {"q11": "Which curling iron requires a miniature stove?", "a11":"conventional/ Marcel"},
+    {"q12": "Which electrical measurement measures the amount of power used in a second?", "a12":"watt"},
+    {"q13": "What is the first rule of mixing any chemical?", "a13":"read the manufacturers directions"},
+    {"q14": "What are the 2 types of capes?", "a14":"dry and wet"}
+]
+
+

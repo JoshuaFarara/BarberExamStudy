@@ -1,0 +1,22 @@
+[   
+    {"q1": "What factors influence hair growth?", "a1": "genetics, strength of your integumentary system (skin and hair), diet and medications"},
+    {"q2": "On average, how fast does hair grow", "a2": "hair grows about ½ inch per month"},
+    {"q3": "What protein do nails and skin share?", "a3": "protein keratin"},
+    {"q4": "What are the 3 layers of the hair called?", "a4": "cuticle- outer layer, cortex - middle layer and the medulla - inner layer"},
+    {"q5": "What layer of the hair holds the bonds?", "a4": "The cortex - strength, elasticity bonds and proteins, altered during chemical process"},
+    {"q6": "What is a patch test?", "a5": "Patch tests check for allergies, place a drop of chemical on inside of elbow or behind ear of client and check reaction after 24-48hrs"},
+    {"q7": "What is a porosity test?", "a6": "porosity is the hair's ability to obtain moisture and tested  by holding a few strands of hair with tension and running your fingers across them"},
+    {"q8": "What are the 3 stages of hair growth?", "a7": "cycle starts with anagen, followed by catagen then telogen"},
+    {"q9": "On average, how many hairs are shed daily?", "a8": "body sheds 50 to 100 hairs a day"},
+    {"q10": "What is the term for hair loss?", "a9": "alopecia"},
+    {"q11": "Which type of alopecia comes from old age?", "a10": "Alopecia Senilis"},
+    {"q12": "Which type of alopecia comes from your genes?", "a11": "Androgenic Alopecia"},
+    {"q13": "Name some surgical procedures used to correct hair loss.", "a12": "hair transplants, scalp reductions and flap surgery"},
+    {"q14": "Name a pro and a con of using synthetic hair.", "a13": "Pro: ability to accept chemicals better than the other types of hair  Con: does not take well to chemicals and also melts when too much heat is applied,  client's actual texture and color are extremely hard to match"},
+    {"q15": "What is the difference between epilators and depilators?", "a14": "Epilators pull the entire hair out of the hair follicle: wax, depilators dissolve the hair at the hair bulb: nair.  DEpilators DEssolve and ePULLators (epilators) PULL."},
+    {"q16": "What are the 2 methods to rest at the shampoo bowl?", "a15": "recline and incline "},   
+    {"q17": "What is the purpose of conditioner?", "a15": "Conditioners restore moisture, oil and proteins to the hair and scalp"},
+    {"q18": "What type of tape is used when applying a hairpiece?", "a15": "Spirit gum is a two sided tape that helps keep the hairpiece on the skin without harming the skin or the hairpiece."},
+    {"q19": "What is a styling block?", "a15": "A styling block is a device used to simulate a person's head for wig purposes."}
+
+]

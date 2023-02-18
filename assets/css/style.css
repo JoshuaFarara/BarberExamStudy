@@ -1,0 +1,51 @@
+#myElement {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+  }
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+  }
+  
+.headingTitle {
+    text-align: center;
+    color: rgb(8, 11, 204);
+    margin-left: 20px;
+  }
+ 
+ 
+/* Style the flip card container */
+.flip-card {
+    perspective: 1000px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+/* Style the front and back sides */
+.flip-card-front, .flip-card-back {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+/* Style the front side */
+.flip-card-front {
+    background-color: rgb(221, 230, 173);
+    color: rgb(1, 1, 62);
+    z-index: 2;
+  }
+
+/* Style the back side */
+.flip-card-back {
+    background-color: navy;
+    color: rgb(159, 235, 37);
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+
