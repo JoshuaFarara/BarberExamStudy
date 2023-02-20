@@ -1,5 +1,5 @@
 "user strict";
 
-import users from '../../JSON/chapter1.json' assert {type: 'json'};
+// import users from '../../JSON/chapter1.json' assert {type: 'json'};
 
-console.log(users);
+// console.log(users);

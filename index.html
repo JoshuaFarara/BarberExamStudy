@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head> 
-    <title>The Blueprint Review App</title>
-    <link rel="stylesheet" type="text/css" href="style.css">   
+    <meta charset="UTF-8">
+    <title>The MasterBarber Theory Exam Study - Review App</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  <style></style>   
 </head>
-<body>
-    <h1 class="headingTitle">The BluePrint Flip-Card Review Game</h1>
-  <p>Today you will play our first basic flip card study guide to master the content of the BluePrint and become a qualified Master Barber.</p>
+
+<header>
+  <div id="menu" >
+  <h1 class="headingTitle">The Master Barber Theory Exam Flip-Card Review Game</h1>
+  <p>Sit back and Flip, master the cirriculum required to become a Master Barber.
+     Increase your chance of passing the theory exam by using the proper tools to prepare you for the exam!
+     Have Fun and Learn.</p>
+</header>
+
+<body id="menu">
   <ul>
+    <h4>Instructions</h4>
     <li>Learn</li>
     <li>Practice</li>
     <li>Assess</li>
@@ -16,21 +26,38 @@
   </ul>
   <p id="message"></p>
   
-        
-    <!-- Create the flip card container -->
-    <div class="flip-card">
-
-    <!-- Define the front and back sides -->
-    <div class="flip-card-front">
-        Front side
+  <hr>
+  
+  <div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner"> <!--actual card to be doing the flipping-->
+        <div class="card__face card__face--front"> <!--front face of the card-->
+            <h2>Master Barber Exam Deck</h2>
+        </div>
+        <div class="card__face card__face--back"> <!--back face of the card-->
+            <div class="card__content">
+                <div class="card__header">
+                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
+                    <h2>Theory Exam Study Cards</h2>
+                </div>
+                <div class="card__body">
+                    <h3><a href="">Theory Cirriculum</a></h3>
+                    <p>Visit your State Board's official exam requirements as a reference in order to prepare your optimal study plan for success based on your state's specific cirriculum.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="flip-card-back">
-        Back side
-    </div>
+  </div>
 
-    </div>
+  <!-- <img width="800" height="800" src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" class="header_logo header-logo" alt="Barbers4lyf"> -->
 
-  <table>
+  <div class="card-nextprev">
+    <a class="button" href="">❮ Previous</a>
+    <a class="button" href="">Next ❯</a> 
+  </div>
+
+  <hr>
+
+  <!-- <table>
     <thead>
       <tr>
         <th>Number</th>
@@ -39,15 +66,22 @@
       </tr>
 
     </thead>
-    <tbody id="data-output">
-        <!-- Populated from javascript file-->
-    
+    <tbody id="data-output">1
     </tbody> 
-  </table> 
+  </table>  -->
     
  
 </body> 
+
+<footer class="copyright-footer">
+  Copyright 2023 ©; By
+  <a href="https://barbers4lyf.com/"> Barbers4lyf</a>
+  x  
+  <a href="http://lyfjourney.com/"> LYFJOURNEY</a>
+</footer>
+
 <script src="script.js"></script>
-<script type="text/javascript" src="main.js" ></script>
+<script src="assets/JAVASCRIPT/main.js"></script>
 <script type="module" src="app.js"></script>
 </html>
+

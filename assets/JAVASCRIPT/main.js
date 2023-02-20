@@ -20,9 +20,9 @@
 // //display objeject within a variable for index file
 // document.getElementById('message').innerHTML = myObject.favTrimmers;
 
-var barbers = '{"Joshua":{"age":"27", "nickname":"FararaTheArtist"}, "Monty":{"age":"41", "nickname":"MontyDaBarber"}}';
-var barbersObject = JSON.parse(barbers);
-console.log(barbersObject)
+// var barbers = '{"Joshua":{"age":"27", "nickname":"FararaTheArtist"}, "Monty":{"age":"41", "nickname":"MontyDaBarber"}}';
+// var barbersObject = JSON.parse(barbers);
+// console.log(barbersObject)
 
 // // document.getElementById('message').innerHTML = barbersObject.Joshua.nickname;
 // var xhr = new XMLHttpRequest();
@@ -38,3 +38,9 @@ console.log(barbersObject)
 //     console.log(myStuff[1]);
 //     } // end of if
 // } //end of the function
+
+const card = document.querySelector('.card__inner');
+
+card.addEventListener('click', function () {
+    card.classList.toggle('is-flipped');
+});
