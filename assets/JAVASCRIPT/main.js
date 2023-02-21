@@ -39,8 +39,16 @@
 //     } // end of if
 // } //end of the function
 
-const card = document.querySelector('.card__inner');
+// const card = document.querySelectorAll('.card__inner');
 
-card.addEventListener('click', function () {
-    card.classList.toggle('is-flipped');
+// card.addEventListener('click', function () {
+//     card.classList.toggle('is-flipped');
+// });
+
+const cards = document.querySelectorAll('.card__inner');
+
+cards.forEach(function(card) {
+    card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+    })
 });

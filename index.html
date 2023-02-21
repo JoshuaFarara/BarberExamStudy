@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>The MasterBarber Theory Exam Study - Review App</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+
   <style></style>   
 </head>
 
@@ -16,16 +17,34 @@
 </header>
 
 <body id="menu">
+  <!-- <ul></ul>
+  <script>
+    let question = " "
+    let answer
+    fetch('assets/JSON/chapter1.json')
+    .then(response => response.json())
+    .then(json => {
+        json.forEach(element => {
+          list += `<li>${json[i].q1}<li>`
+          list += `<li>${json[i].a1}<li>`
+        });
+        document.querySelector("ul").innerHTML = question
+        document.querySelector("ul").innerHTML = answer
+        console.log(json[0].q1);
+    })
+  </script> -->
+  
   <ul>
     <h4>Instructions</h4>
     <li>Learn</li>
     <li>Practice</li>
-    <li>Assess</li>
+    <li>Test</li>
     <li>Success</li>
-    <li>Repeat</li>
   </ul>
   <p id="message"></p>
   
+  <h3>Below you can choose a deck of cards to start studying with them.</h3>
+
   <hr>
   
   <div class="card">  <!--Outward card that handles perspective-->
@@ -42,6 +61,28 @@
                 <div class="card__body">
                     <h3><a href="">Theory Cirriculum</a></h3>
                     <p>Visit your State Board's official exam requirements as a reference in order to prepare your optimal study plan for success based on your state's specific cirriculum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner"> <!--actual card to be doing the flipping-->
+        <div class="card__face card__face--front"> <!--front face of the card-->
+            <h2>Chapter One</h2>
+        </div>
+        <div class="card__face card__face--back"> <!--back face of the card-->
+            <div class="card__content">
+                <div class="card__header">
+                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
+                    <h2>Question</h2>
+                    <p> the question?</p>
+                </div>
+                <div class="card__body">
+                    <h3><a href="">Answer</a></h3>
+                    <p>the answer!</p>
                 </div>
             </div>
         </div>
@@ -80,8 +121,8 @@
   <a href="http://lyfjourney.com/"> LYFJOURNEY</a>
 </footer>
 
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 <script src="assets/JAVASCRIPT/main.js"></script>
-<script type="module" src="app.js"></script>
+<!-- <script type="module" src="app.js"></script> -->
 </html>
 
