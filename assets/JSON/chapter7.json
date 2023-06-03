@@ -1,7 +1,9 @@
 {
-    "1": {
-    "question": "What are the 3 types of rods?",
-    "answer": "Concave wraps: These are used to create curls in the hair and have a dip in the middle, with larger ends."
+    "Chapter7": [
+   {  
+        "Id": 1,  
+        "question": "What are the 3 types of rods?",
+        "answer": "Concave wraps: These are used to create curls in the hair and have a dip in the middle, with larger ends."
     },
     "2": {
     "question": "What are the 3 types of wraps?",

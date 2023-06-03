@@ -117,7 +117,7 @@ const questions = [
         ]
     },
     {
-        question: 'What are his wife and son's names?',
+        question: 'What are his wife and sons names?',
         answers: [
             {text: 'Nailah', correct: true},
             {text: 'Caleb', correct: false},
@@ -126,7 +126,7 @@ const questions = [
         ]
     },
     {
-        question: 'What is FararaTheArtist first name?'d,
+        question: 'What is FararaTheArtist first name?',
         answers: [
             {text: 'Joshua', correct: true},
             {text: 'John', correct: false},

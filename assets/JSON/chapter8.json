@@ -1,57 +1,63 @@
 {
-    "1": {
-    "question": "What is considered neutral on the pH scale?",
-    "answer": "The pH scale is a measure of the acidity or basicity of a substance. A pH of 7 is considered neutral."
-    },
-    "2": {
-    "question": "What is the purpose of an alkali?",
-    "answer": "Acids and alkalis have different effects on the hair and skin. Acids can tighten the cuticle layer, while alkalis can open it up."
-    },
-    "3": {
-    "question": "Healthy hair is found where on the pH scale?",
-    "answer": "The pH range for healthy hair and skin is typically between 4.5 and 5.5."
-    },
-    "4": {
-    "question": "What product falls at 7 on the pH scale?",
-    "answer": "Neutral products, such as shampoos and water, are neither acidic nor alkaline."
-    },
-    "5": {
-    "question": "Where do most relaxers fall on the scale?",
-    "answer": "Chemical hair relaxers have a high alkaline pH, usually between 11 and 13, which allows them to penetrate the cuticle and reach the cortex."
-    },
-    "6": {
-    "question": "What are the 3 types of chemical texture services?",
-    "answer": "Permanent waves and chemical hair relaxers can change the natural curl pattern of the hair. A permanent wave can add curl to straight hair, while a chemical hair relaxer can straighten curly hair."
-    },
-    "7": {
-    "question": "What is the difference between a waving lotion and a rearranger?",
-    "answer": "A perm involves both physical and chemical actions, using a chemical lotion and a neutralizer. A rearranger is a thicker cream used in the process."
-    },
-    "8": {
-    "question": "What was the name of the first perm?",
-    "answer": "There are different types of permanent waves, including alkaline waves and cold waves."
-    },
-    "9": {
-    "question": "What is the main ingredient in true acid waves?",
-    "answer": "A true acid wave has a pH between 4.5 and 7 and is on the more acidic side of the pH scale."
-    },
-    "10": {
-    "question": "What is lanthionization?",
-    "answer": "Breaking the bonds in the hair is also known as lanthionization, which can change the structure of the hair."
-    },
-    "11": {
-    "question": "Where does the relaxer go during retouch applications?",
-    "answer": "A retouch application refers to the process of applying chemicals to newly grown hair to match the previously treated or colored hair."
-    },
-    "12": {
-    "question": "What is the technical name for a Jehri Curl?",
-    "answer": "The reformation curl, also known as the jehri curl, can give curly hair an even curlier pattern."
-    },
-    "13": {
-    "question": "What is the most common perm wrap for men?",
-    "answer": "The curvature wrap is a common style for men with natural curl patterns."
-    },
-    "14": {
-    "question": "What is a curl reduction?", 
-    "answer": "A curl reduction is a process of loosening the curl of the hair by shampooing it several times before the chemicals have fully settled in the cortex."}
+    "Chapter8": [
+        {
+            "Id": 1, 
+            "question": "What is considered neutral on the pH scale?",
+            "answer": "The pH scale is a measure of the acidity or basicity of a substance. A pH of 7 is considered neutral."
+        },
+        {   
+            "Id": 2, 
+            "question": "What is the purpose of an alkali?",
+            "answer": "Acids and alkalis have different effects on the hair and skin. Acids can tighten the cuticle layer, while alkalis can open it up."
+        },
+        {  
+            "Id": 3,
+            "question": "Healthy hair is found where on the pH scale?",
+            "answer": "The pH range for healthy hair and skin is typically between 4.5 and 5.5."
+        },
+        { 
+            "Id": 4, 
+            "question": "What product falls at 7 on the pH scale?",
+            "answer": "Neutral products, such as shampoos and water, are neither acidic nor alkaline."
+        },
+        "5": {
+        "question": "Where do most relaxers fall on the scale?",
+        "answer": "Chemical hair relaxers have a high alkaline pH, usually between 11 and 13, which allows them to penetrate the cuticle and reach the cortex."
+        },
+        "6": {
+        "question": "What are the 3 types of chemical texture services?",
+        "answer": "Permanent waves and chemical hair relaxers can change the natural curl pattern of the hair. A permanent wave can add curl to straight hair, while a chemical hair relaxer can straighten curly hair."
+        },
+        "7": {
+        "question": "What is the difference between a waving lotion and a rearranger?",
+        "answer": "A perm involves both physical and chemical actions, using a chemical lotion and a neutralizer. A rearranger is a thicker cream used in the process."
+        },
+        "8": {
+        "question": "What was the name of the first perm?",
+        "answer": "There are different types of permanent waves, including alkaline waves and cold waves."
+        },
+        "9": {
+        "question": "What is the main ingredient in true acid waves?",
+        "answer": "A true acid wave has a pH between 4.5 and 7 and is on the more acidic side of the pH scale."
+        },
+        "10": {
+        "question": "What is lanthionization?",
+        "answer": "Breaking the bonds in the hair is also known as lanthionization, which can change the structure of the hair."
+        },
+        "11": {
+        "question": "Where does the relaxer go during retouch applications?",
+        "answer": "A retouch application refers to the process of applying chemicals to newly grown hair to match the previously treated or colored hair."
+        },
+        "12": {
+        "question": "What is the technical name for a Jehri Curl?",
+        "answer": "The reformation curl, also known as the jehri curl, can give curly hair an even curlier pattern."
+        },
+        "13": {
+        "question": "What is the most common perm wrap for men?",
+        "answer": "The curvature wrap is a common style for men with natural curl patterns."
+        },
+        "14": {
+        "question": "What is a curl reduction?", 
+        "answer": "A curl reduction is a process of loosening the curl of the hair by shampooing it several times before the chemicals have fully settled in the cortex."}
+    ]
 }

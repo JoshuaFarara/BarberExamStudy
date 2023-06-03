@@ -45,6 +45,7 @@
 //     card.classList.toggle('is-flipped');
 // });
 
+
 const cards = document.querySelectorAll('.card__inner');
 
 cards.forEach(function(card) {
@@ -52,3 +53,49 @@ cards.forEach(function(card) {
         card.classList.toggle('is-flipped');
     })
 });
+
+
+fetch('assets/JSON/chapter6.json')
+    .then(response => response.json())
+    .then(data => {
+        let cardContainer = document.querySelector('.card__inner');
+
+        for (let key in data) {
+            let question = data[key].question;
+            let answer = data[key].answer;
+
+  
+
+            let card = `
+                <div class="card">
+                    <div class="card__inner"> 
+                        <div class="card__face card__face--front">
+                            <h2>${key}</h2>
+                            <div class="question">${question}</div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    </div>
+                                <div class="card__body">    
+                                    <div class="answer">${answer}</div>
+                                    
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            `;
+
+
+
+            cardContainer.innerHTML += card;
+        }
+
+        let restartButton = document.querySelector('#restart');
+
+        restartButton.addEventListener('click', () => {
+            window.location.reload();
+        });
+    })
+    .catch(error => console.error(error));

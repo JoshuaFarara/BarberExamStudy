@@ -1,12 +1,13 @@
 {
     "FararaTheArtist": [
         {
-            "question1": "Who is FararaTheArtist?",
-            "answer1": "A master of the arts of barbering, programming, business and more!"
+            "Id": 1,
+            "question": "Who is FararaTheArtist?",
+            "answer": "A master of the arts of barbering, programming, business and more!"
         },
         {
-            "question1": "Where is he from?",
-            "answer1": "Atlanta"
+            "question": "Where is he from?",
+            "answer": "Atlanta"
         },
         {
             "question1": "Where did he attend college?",
