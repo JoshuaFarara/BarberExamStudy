@@ -1,0 +1,64 @@
+  <div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner"> <!--actual card to be doing the flipping-->
+        <div class="card__face card__face--front"> <!--front face of the card-->
+            <h2>Chapter One</h2>
+        </div>
+        <div class="card__face card__face--back"> <!--back face of the card-->
+            <div class="card__content">
+                <div class="card__header">
+                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
+                    <h2>Question</h2>
+                    <p> the question?</p>
+                </div>
+                <div class="card__body">
+                    <h3><a href="">Answer</a></h3>
+                    <p>the answer!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner"> <!--actual card to be doing the flipping-->
+        <div class="card__face card__face--front"> <!--front face of the card-->
+            <h2>Master Barber Exam Deck</h2>
+        </div>
+        <div class="card__face card__face--back"> <!--back face of the card-->
+            <div class="card__content">
+                <div class="card__header">
+                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
+                    <h2>Theory Exam Study Cards</h2>
+                </div>
+                <div class="card__body">
+                    <h3><a href="">Theory Cirriculum</a></h3>
+                    <p>Visit your State Board's official exam requirements as a reference in order to prepare your optimal study plan for success based on your state's specific cirriculum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner"> <!--actual card to be doing the flipping-->
+        <div class="card__face card__face--front"> <!--front face of the card-->
+            <h2>Chapter One</h2>
+        </div>
+        <div class="card__face card__face--back"> <!--back face of the card-->
+            <div class="card__content">
+                <div class="card__header">
+                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
+                    <h2>Question</h2>
+                    <p> the question?</p>
+                </div>
+                <div class="card__body">
+                    <h3><a href="">Answer</a></h3>
+                    <p>the answer!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

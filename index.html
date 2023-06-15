@@ -13,26 +13,9 @@
   <h1 class="headingTitle">The Master Barber Theory Exam Flip-Card Review Game</h1>
   <p>Sit back and Flip, master the cirriculum required to become a Master Barber.
      Increase your chance of passing the theory exam by using the proper tools to prepare you for the exam!
-     Have Fun and Learn.</p>
-</header>
+     Have Fun and Learn.</p></header>
 
-<body id="menu">
-  <!-- <ul></ul>
-  <script>
-    let question = " "
-    let answer
-    fetch('assets/JSON/chapter1.json')
-    .then(response => response.json())
-    .then(json => {
-        json.forEach(element => {
-          list += `<li>${json[i].q1}<li>`
-          list += `<li>${json[i].a1}<li>`
-        });
-        document.querySelector("ul").innerHTML = question
-        document.querySelector("ul").innerHTML = answer
-        console.log(json[0].q1);
-    })
-  </script> -->
+<body id="center">
   
   <ul>
     <h4>Instructions</h4>
@@ -41,7 +24,6 @@
     <li>Test</li>
     <li>Success</li>
   </ul>
-  <p id="message"></p>
   
   <h3>Below you can choose a deck of cards to start studying with them.</h3>
 
@@ -68,32 +50,12 @@
   </div>
 
 
-  <div class="card">  <!--Outward card that handles perspective-->
-    <div class="card__inner"> <!--actual card to be doing the flipping-->
-        <div class="card__face card__face--front"> <!--front face of the card-->
-            <h2>Chapter One</h2>
-        </div>
-        <div class="card__face card__face--back"> <!--back face of the card-->
-            <div class="card__content">
-                <div class="card__header">
-                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
-                    <h2>Question</h2>
-                    <p> the question?</p>
-                </div>
-                <div class="card__body">
-                    <h3><a href="">Answer</a></h3>
-                    <p>the answer!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
 
   <!-- <img width="800" height="800" src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" class="header_logo header-logo" alt="Barbers4lyf"> -->
 
   <div class="card-nextprev">
-    <a class="button" href="">❮ Previous</a>
-    <a class="button" href="">Next ❯</a> 
+    <button class="button" id="previous">❮ Previous</button>
+    <button class="button" id="next">Next ❯</button> 
   </div>
 
   <hr>

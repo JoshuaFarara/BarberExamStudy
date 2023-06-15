@@ -57,53 +57,52 @@ cards.forEach(function(card) {
     })
 });
 
+// fetch('assets/JSON/chapter6.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         let cardContainer = document.querySelector('.card__inner');
 
-fetch('assets/JSON/chapter6.json')
-    .then(response => response.json())
-    .then(data => {
-        let cardContainer = document.querySelector('.card__inner');
-
-        for (let key in data) {
-            let question = data[key].question;
-            let answer = data[key].answer;
+//         for (let key in data) {
+//             let question = data[key].question;
+//             let answer = data[key].answer;
 
   
 
-            let card = `
-                <div class="card">
-                    <div class="card__inner"> 
-                        <div class="card__face card__face--front">
-                            <div class="card__content">    
-                                <h2>${key}</h2>
-                                <p>${question}</p>
-                            </div>    
-                        </div>
-                        <div class="card__face card__face--back">
-                            <div class="card__content">
-                                <div class="card__header">
-                                    </div>
-                                <div class="card__body">    
-                                    <div class="answer">${answer}</div>
+//             let card = `
+//                 <div class="card">
+//                     <div class="card__inner"> 
+//                         <div class="card__face card__face--front">
+//                             <div class="card__content">    
+//                                 <h2>${key}</h2>
+//                                 <p>${question}</p>
+//                             </div>    
+//                         </div>
+//                         <div class="card__face card__face--back">
+//                             <div class="card__content">
+//                                 <div class="card__header">
+//                                     </div>
+//                                 <div class="card__body">    
+//                                     <div class="answer">${answer}</div>
                                     
-                                </div>
-                            </div>        
-                        </div>
-                    </div>
-                </div>
-            `;
+//                                 </div>
+//                             </div>        
+//                         </div>
+//                     </div>
+//                 </div>
+//             `;
 
 
 
-            cardContainer.innerHTML += card;
-        }
+//             cardContainer.innerHTML += card;
+//         }
 
-        let restartButton = document.querySelector('#restart');
+//         let restartButton = document.querySelector('#restart');
 
-        restartButton.addEventListener('click', () => {
-            window.location.reload();
-        });
-    })
-    .catch(error => console.error(error));
+//         restartButton.addEventListener('click', () => {
+//             window.location.reload();
+//         });
+//     })
+//     .catch(error => console.error(error));
 
 /*
 Modified First Iteration
@@ -264,3 +263,72 @@ Second Iteration
 // }
 
 // fetchQuestionsAndBuildCards();
+
+// 3rd iteration
+// Get references to relevant elements
+const cardContainer = document.querySelector('.card__inner');
+const nextButton = document.querySelector('#next');
+const previousButton = document.querySelector('#previous');
+const restartButton = document.querySelector('#restart');
+
+// Initialize variables
+let currentIndex = 0;
+let cardsData = [];
+
+// Fetch data from JSON file
+fetch('assets/JSON/chapter6.json')
+  .then(response => response.json())
+  .then(data => {
+    cardsData = Object.entries(data);
+    showCard(currentIndex); // Display the first card
+
+    nextButton.addEventListener('click', () => {
+      currentIndex++;
+      if (currentIndex < cardsData.length) {
+        showCard(currentIndex);
+      } else {
+        // Handle reaching the end of cards
+        alert('End of cards');
+      }
+    });
+
+    previousButton.addEventListener('click', function() {
+        currentIndex--;
+        showCard(currentIndex);
+    });
+
+    restartButton.addEventListener('click', () => {
+      currentIndex = 0;
+      showCard(currentIndex);
+    });
+  })
+  .catch(error => console.error(error));
+
+// Function to display a specific card
+function showCard(index) {
+  const [key, cardData] = cardsData[index];
+  const { question, answer } = cardData;
+
+  const card = `
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <div class="card__content">    
+            <h2>${key}</h2>
+            <p>${question}</p>
+          </div>    
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <h2>${key}</h2>  
+            <p>${answer}</p>
+          </div>        
+        </div>
+      </div>
+    </div>
+  `;
+
+  cardContainer.innerHTML = card;
+
+ 
+}
