@@ -45,6 +45,9 @@
 //     card.classList.toggle('is-flipped');
 // });
 
+/*
+First Iteration
+*/
 
 const cards = document.querySelectorAll('.card__inner');
 
@@ -70,8 +73,10 @@ fetch('assets/JSON/chapter6.json')
                 <div class="card">
                     <div class="card__inner"> 
                         <div class="card__face card__face--front">
-                            <h2>${key}</h2>
-                            <div class="question">${question}</div>
+                            <div class="card__content">    
+                                <h2>${key}</h2>
+                                <p>${question}</p>
+                            </div>    
                         </div>
                         <div class="card__face card__face--back">
                             <div class="card__content">
@@ -99,3 +104,163 @@ fetch('assets/JSON/chapter6.json')
         });
     })
     .catch(error => console.error(error));
+
+/*
+Modified First Iteration
+Updated Implementation
+*/
+
+// const cards = document.querySelectorAll('.card__inner');
+// let currentCardIndex = 0;
+
+// function flipCard(card) {
+//     card.classList.toggle('is-flipped');
+// }
+
+// function displayCard(cardIndex) {
+//     cards.forEach(function(card, index) {
+//         if (index === cardIndex) {
+//             card.style.display = 'block';
+//         } else {
+//             card.style.display = 'none';
+//         }
+//     });
+// }
+
+// function showNextCard() {
+//     if (currentCardIndex < cards.length - 1) {
+//         flipCard(cards[currentCardIndex]);
+//         currentCardIndex++;
+//         displayCard(currentCardIndex);
+//         flipCard(cards[currentCardIndex]);
+//     }
+// }
+
+// cards.forEach(function(card) {
+//     card.addEventListener('click', function () {
+//         flipCard(card);
+//     })
+// });
+
+// fetch('assets/JSON/chapter6.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         let cardContainer = document.querySelector('.card__container');
+
+//         for (let key in data) {
+//             let question = data[key].question;
+//             let answer = data[key].answer;
+
+//             let card = `
+//                 <div class="card">
+//                     <div class="card__inner">
+//                         <div class="card__face card__face--front">
+//                             <h2>${key}</h2>
+//                             <div class="question">${question}</div>
+//                         </div>
+//                         <div class="card__face card__face--back">
+//                             <div class="card__content">
+//                                 <div class="card__header"></div>
+//                                 <div class="card__body">
+//                                     <div class="answer">${answer}</div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             `;
+
+//             cardContainer.innerHTML += card;
+//         }
+
+//         displayCard(currentCardIndex);
+
+//         let nextButton = document.querySelector('#next');
+//         nextButton.addEventListener('click', showNextCard);
+
+//         let restartButton = document.querySelector('#restart');
+//         restartButton.addEventListener('click', () => {
+//             window.location.reload();
+//         });
+//     })
+//     .catch(error => console.error(error));
+
+
+
+/*
+Second Iteration
+*/
+
+// function buildCard(question, answer) {
+//     let cardContainer = document.querySelector('.card-container');
+
+//     // let card = `
+//     //     <div class="card">
+//     //         <div class="question">${question}</div>
+//     //         <div class="answer">${answer}</div>
+//     //     </div>
+//     // `;
+
+//     let card = `
+//         <div class="card">
+//             <div class="card__inner"> 
+//                 <div class="card__face card__face--front">
+//                     <h2>${key}</h2>
+//                     <div class="question">${question}</div>
+//                 </div>
+//                 <div class="card__face card__face--back">
+//                     <div class="card__content">
+//                         <div class="card__header">
+//                             </div>
+//                         <div class="card__body">    
+//                             <div class="answer">${answer}</div>
+                            
+//                         </div>
+//                     </div>        
+//                 </div>
+//             </div>
+//         </div>
+//     `;
+
+//     cardContainer.innerHTML = card;
+// }
+
+// function fetchQuestionsAndBuildCards() {
+//     fetch('questions.json')
+//         .then(response => response.json())
+//         .then(data => {
+//             let questions = Object.values(data);
+//             let currentIndex = 0;
+            
+
+//             function showNextCard() {
+//                 if (currentIndex >= questions.length) {
+//                     alert("End of questions. Restarting...");
+//                     currentIndex = 0;
+//                 }
+
+//                 let question = questions[currentIndex].question;
+//                 let answer = questions[currentIndex].answer;
+//                 // let question = data[key].question;
+//                 // let answer = data[key].answer;
+
+//                 buildCard(question, answer);
+//                 currentIndex++;
+//             }
+
+//             showNextCard();
+
+//             let nextButton = document.querySelector('#next');
+//             let restartButton = document.querySelector('#restart');
+
+//             nextButton.addEventListener('click', showNextCard);
+//             restartButton.addEventListener('click', () => {
+//                 alert("Restarting...");
+//                 currentIndex = 0;
+//                 showNextCard();
+//             });
+//         })
+//         .catch(error => console.error(error));
+// }
+
+// fetchQuestionsAndBuildCards();
