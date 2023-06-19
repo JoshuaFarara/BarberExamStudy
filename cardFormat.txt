@@ -62,3 +62,27 @@
         </div>
     </div>
   </div>
+
+
+
+
+<div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <div class="card__content">    
+            <h2>1</h2>
+            <p>Which type of razor has a fixed blade attached to it?</p>
+          </div>    
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <h2>1</h2>  
+            <p>A conventional straight razor has a blade that is fixed and cannot be removed.</p>
+          </div>        
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

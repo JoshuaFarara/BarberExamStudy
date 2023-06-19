@@ -36,6 +36,16 @@
   cursor: pointer;
 }
 
+#restart {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 #next:hover {
   background-color: #136df3;
 }
@@ -44,6 +54,9 @@
   background-color: #136df3;
 }
 
+#restart:hover {
+  background-color: #136df3;
+}
 /* #myElement {
     text-align: center;
     width: 200px;
@@ -151,19 +164,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotateY(0deg);
+
 }
 
 .card__face--front h2 {
   color: #FFF;
-  font-size: 32px;
+  font-size: 64px;
+}
+
+.card__face--front p {
+  color: #FFF;
+  font-size: 45px;
 }
 
 .card__face--back {
+  /* background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center; */
   background-color: var(--light);
   transform: rotateY(180deg);
   /* backface-visibility: visible; */
 }
+
+.card__face--back--gen {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light);
+  transform: rotateY(180deg);
+  /* backface-visibility: visible; */
+}
+
+.card__face--back--gen h2 {
+  color: #ffffff;
+  font-size: 64px;
+}
+
+.card__face--back--gen p {
+  color: #ffffff;
+  font-size: 45px;
+}
+
 
 .card__content {
   width: 100%;
