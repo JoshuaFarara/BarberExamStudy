@@ -277,95 +277,15 @@ Second Iteration
 // 3rd iteration
 // Get references to relevant elements
 
-// const cards = document.querySelectorAll('.card__inner');
-
-// cards.forEach(function(card) {
-//   card.addEventListener('click', function() {
-//     card.classList.toggle('is-flipped');
-//   });
-// });
-
-// const cardContainer = document.querySelector('.card__inner');
-// const nextButton = document.querySelector('#next');
-// const previousButton = document.querySelector('#previous');
-// const restartButton = document.querySelector('#restart');
-
-// // Initialize variables
-// let currentIndex = 0;
-// let cardsData = [];
-
-// // Fetch data from JSON file
-// fetch('assets/JSON/chapter6.json')
-//   .then((response) => response.json())
-//   .then((data) => {
-//     cardsData = Object.entries(data);
-//     showCard(currentIndex); // Display the first card
-
-//     nextButton.addEventListener('click', () => {
-//       currentIndex++;
-//       if (currentIndex < cardsData.length) {
-//         showCard(currentIndex);
-//       } else {
-//         // Handle reaching the end of cards
-//         alert('End of cards');
-//       }
-//     });
-
-//     previousButton.addEventListener('click', function() {
-//         currentIndex--;
-//         showCard(currentIndex);
-//     });
-
-//     restartButton.addEventListener('click', () => {
-//       currentIndex = 0;
-//       showCard(currentIndex);
-//     });
-//   })
-//   .catch(error => console.error(error));
-
-// // Function to display a specific card
-// function showCard(index) {
-//   const [key, cardData] = cardsData[index];
-//   const { question, answer } = cardData;
-
-//   const card = `
-//     <div class="card">
-//       <div class="card__inner">
-//         <div class="card__face card__face--front">
-//           <div class="card__content">    
-//             <h2>${key}</h2>
-//             <p>${question}</p>
-//           </div>    
-//         </div>
-//         <div class="card__face card__face--back">
-//           <div class="card__content">
-//             <h2>${key}</h2>  
-//             <p>${answer}</p>
-//           </div>        
-//         </div>
-//       </div>
-//     </div>
-//   `;
-//   // console.log(cardContainer)
-//   // console.log(cardData[index])
-//   console.log(key)
-//   cardContainer.innerHTML = card;
-
- 
-// }
-
-/* 4th Iteration */
-const cards = document.querySelectorAll('.card'); // Select all card containers
+const cards = document.querySelectorAll('.card__inner');
 
 cards.forEach(function(card) {
-  const cardInner = card.querySelector('.card__inner'); // Select the inner card element
-
-  cardInner.addEventListener('click', function() {
-    cardInner.classList.toggle('is-flipped');
+  card.addEventListener('click', function() {
+    card.classList.toggle('is-flipped');
   });
 });
 
-const cardContainers = document.querySelectorAll('.card__inner'); // Select all card containers
+const cardContainer = document.querySelector('.card__inner');
 const nextButton = document.querySelector('#next');
 const previousButton = document.querySelector('#previous');
 const restartButton = document.querySelector('#restart');
@@ -392,8 +312,8 @@ fetch('assets/JSON/chapter6.json')
     });
 
     previousButton.addEventListener('click', function() {
-      currentIndex--;
-      showCard(currentIndex);
+        currentIndex--;
+        showCard(currentIndex);
     });
 
     restartButton.addEventListener('click', () => {
@@ -401,35 +321,132 @@ fetch('assets/JSON/chapter6.json')
       showCard(currentIndex);
     });
   })
-  .catch((error) => console.error(error));
+  .catch(error => console.error(error));
 
 // Function to display a specific card
 function showCard(index) {
-  const cardContainer = cardContainers[index];
   const [key, cardData] = cardsData[index];
   const { question, answer } = cardData;
 
   const card = `
-    <div class="card__inner">
-      <div class="card__face card__face--front">
-        <div class="card__content">
-          <h2>${key}</h2>
-          <p>${question}</p>
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <div class="card__content">    
+            <h2>${key}</h2>
+            <p>${question}</p>
+          </div>    
         </div>
-      </div>
-      <div class="card__face card__face--back--gen">
-        <div class="card__content">
-          <h2>${key}</h2>
-          <h4>*</h4>
-          <p>${answer}</p>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <h2>${key}</h2>  
+            <p>${answer}</p>
+          </div>        
         </div>
       </div>
     </div>
   `;
-  console.log(index);
-  // console.log(index);
+  console.log(cardContainer);
+  console.log(cardData);
+  console.log(cardData.length);
+  console.log(card);
+  console.log(key)
   cardContainer.innerHTML = card;
+
 }
+
+/* 4th Iteration */
+
+// const cards = document.querySelectorAll('.card'); // Select all card containers
+
+// cards.forEach(function(card) {
+//   const cardInner = card.querySelector('.card__inner'); // Select the inner card element
+
+//   cardInner.addEventListener('click', function() {
+//     cardInner.classList.toggle('is-flipped');
+//   });
+// });
+
+// const cardContainers = document.querySelectorAll('.card__inner'); // Select all card containers
+// const nextButton = document.querySelector('#next');
+// const previousButton = document.querySelector('#previous');
+// const restartButton = document.querySelector('#restart');
+
+// // Initialize variables
+// let currentIndex = 0;
+// let cardsData = [];
+
+// // Fetch data from JSON file
+// fetch('assets/JSON/chapter6.json')
+//   .then((response) => response.json())
+//   .then((data) => {
+//     // cardsData = [];
+//     // for (const key in data) {
+//     //   if (Object.hasOwnProperty.call(data, key)) {
+//     //     const cardData = data[key];
+//     //     cardsData.push(cardData);
+//     //   }
+//     // }
+//     cardsData = Object.entries(data); // the working line
+//     // cardsData = Object.values(data);
+//     // cardsData = Object.keys(data).map((key) => data[key]);
+//     showCard(currentIndex); // Display the first card
+
+//     nextButton.addEventListener('click', () => {
+//       currentIndex++;
+//       if (currentIndex < cardsData.length) {
+//         showCard(currentIndex);
+//       } else {
+//         // Handle reaching the end of cards
+//         alert('End of cards');
+//       }
+//     });
+
+//     previousButton.addEventListener('click', function() {
+//       currentIndex--;
+//       showCard(currentIndex);
+//     });
+
+//     restartButton.addEventListener('click', () => {
+//       currentIndex = 0;
+//       showCard(currentIndex);
+//     });
+//   })
+//   .catch((error) => console.error(error));
+
+// // Function to display a specific card
+// function showCard(index) {
+//   const cardContainer = cardContainers[index];
+//   // if (!cardContainer) {
+//   //   console.error(`Card container not found at index ${index}`);
+//   //   return;
+//   // }
+//   const [key, cardData] = cardsData[index];
+//   const { question, answer } = cardData;
+
+//   const card = `
+//     <div class="card__inner">
+//       <div class="card__face card__face--front">
+//         <div class="card__content">
+//           <h2>${key}</h2>
+//           <p>${question}</p>
+//         </div>
+//       </div>
+//       <div class="card__face card__face--back--gen">
+//         <div class="card__content">
+//           <h2>${key}</h2>
+//           <h4>*</h4>
+//           <p>${answer}</p>
+//         </div>
+//       </div>
+//     </div>
+//   `;
+//   console.log(cardContainers);
+//   console.log(cardData);
+//   console.log(cardData.length);
+//   console.log(card);
+//   cardContainer.innerHTML = card;
+// }
 
 
 // 5th iteration
