@@ -281,6 +281,7 @@ const cards = document.querySelectorAll('.card__inner');
 
 cards.forEach(function(card) {
   card.addEventListener('click', function() {
+    // const cardInner = card.querySelector('.card__inner'); // Select the inner card element
     card.classList.toggle('is-flipped');
   });
 });
@@ -347,10 +348,11 @@ function showCard(index) {
     </div>
   `;
   console.log(cardContainer);
-  console.log(cardData);
-  console.log(cardData.length);
-  console.log(card);
-  console.log(key)
+  // console.log(cardsData);
+  // console.log(cardData);
+  // console.log(cardData.length);
+  // console.log(card);
+  // console.log(key)
   cardContainer.innerHTML = card;
 
 }

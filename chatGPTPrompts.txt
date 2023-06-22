@@ -1,0 +1,217 @@
+I am providing javascript, html, css, and json files:
+
+why is the flip card flipping inverted?
+
+Javascript File:
+
+
+const cards = document.querySelectorAll('.card__inner');
+
+cards.forEach(function(card) {
+  card.addEventListener('click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+
+const cardContainer = document.querySelector('.card__inner');
+const nextButton = document.querySelector('#next');
+const previousButton = document.querySelector('#previous');
+const restartButton = document.querySelector('#restart');
+
+// Initialize variables
+let currentIndex = 0;
+let cardsData = [];
+
+// Fetch data from JSON file
+fetch('assets/JSON/chapter6.json')
+  .then((response) => response.json())
+  .then((data) => {
+    cardsData = Object.entries(data);
+    showCard(currentIndex); // Display the first card
+
+    nextButton.addEventListener('click', () => {
+      currentIndex++;
+      if (currentIndex < cardsData.length) {
+        showCard(currentIndex);
+      } else {
+        // Handle reaching the end of cards
+        alert('End of cards');
+      }
+    });
+
+    previousButton.addEventListener('click', function() {
+        currentIndex--;
+        showCard(currentIndex);
+    });
+
+    restartButton.addEventListener('click', () => {
+      currentIndex = 0;
+      showCard(currentIndex);
+    });
+  })
+  .catch(error => console.error(error));
+
+// Function to display a specific card
+function showCard(index) {
+  const [key, cardData] = cardsData[index];
+  const { question, answer } = cardData;
+
+  const card = `
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <div class="card__content">    
+            <h2>${key}</h2>
+            <p>${question}</p>
+          </div>    
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <h2>${key}</h2>  
+            <p>${answer}</p>
+          </div>        
+        </div>
+      </div>
+    </div>
+  `;
+  console.log(cardContainer);
+  console.log(cardsData);
+  console.log(cardData);
+  console.log(cardData.length);
+  console.log(card);
+  console.log(key)
+  cardContainer.innerHTML = card;
+
+}
+
+HTML File:
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>The MasterBarber Theory Exam Study - Review App</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style></style>   
+</head>
+
+<header>
+  <div id="menu" >
+  <h1 class="headingTitle">The Master Barber Theory Exam Flip-Card Review Game</h1>
+  <p>Sit back and Flip, master the cirriculum required to become a Master Barber.
+     Increase your chance of passing the theory exam by using the proper tools to prepare you for the exam!
+     Have Fun and Learn.</p></header>
+
+<body id="center">
+  
+  <ul>
+    <h4>Instructions</h4>
+    <li>Learn</li>
+    <li>Practice</li>
+    <li>Test</li>
+    <li>Success</li>
+  </ul>
+  
+  <h3>Below you can choose a deck of cards to start studying with them.</h3>
+
+  <hr>
+  
+  <div class="card">  <!--Outward card that handles perspective-->
+    <div class="card__inner"> <!--actual card to be doing the flipping-->
+        <div class="card__face card__face--front"> <!--front face of the card-->
+            <h2>Master Barber Exam Deck</h2>
+        </div>
+        <div class="card__face card__face--back"> <!--back face of the card-->
+            <div class="card__content">
+                <div class="card__header">
+                    <img src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" alt="pp" class="pp" />
+                    <h2>Theory Exam Study Cards</h2>
+                </div>
+                <div class="card__body">
+                    <h3><a href="">Theory Cirriculum</a></h3>
+                    <p>Visit your State Board's official exam requirements as a reference in order to prepare your optimal study plan for success based on your state's specific cirriculum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- <img width="800" height="800" src="https://barbers4lyf.com/wp-content/uploads/2018/06/Barbers4Lyfe-02-800x800.png" class="header_logo header-logo" alt="Barbers4lyf"> -->
+
+  <div class="card-nextprev">
+    <button class="button" id="previous">❮ Previous</button>
+    <button class="button" id="next">Next ❯</button>
+  </div>
+
+  <hr>
+  <div class="card-nextprev">
+    <button class="button" id="restart">Restart ❯</button>
+  </div>
+
+  <hr>
+ 
+</body> 
+
+<footer class="copyright-footer">
+  Copyright 2023 ©; By
+  <a href="https://barbers4lyf.com/"> Barbers4lyf</a>
+  x  
+  <a href="http://lyfjourney.com/"> LYFJOURNEY</a>
+</footer>
+
+
+<script src="assets/JAVASCRIPT/main.js"></script>
+
+</html>
+
+JSON File:
+
+{
+    "1": {"question": "Which type of razor has a fixed blade attached to it?", "answer": "A conventional straight razor has a blade that is fixed and cannot be removed."},
+    "2": {
+    "question": "What is the direction you are cutting called?",
+    "answer": "The direction you are cutting with a razor is called the cutting stroke."
+    },
+    "3": {
+    "question": "Where are used blades disposed of?",
+    "answer": "Used blades should be disposed of in a sharps container box."
+    },
+    "4": {
+    "question": "What chemical is used to help clot the blood during a blood spill incident?",
+    "answer": "Styptic powder, which is made of the astringent alum, is used to help clot the blood during a blood spill incident."
+    },
+    "5": {
+    "question": "What are the 4 different types of cutting strokes?",
+    "answer": "There are four types of cutting strokes: freehand, reverse freehand, backhand, and reverse backhand."
+    },
+    "6": {
+    "question": "Shaving against the grain is called what?",
+    "answer": "Shaving against the grain is called giving a close shave."
+    },
+    "7": {
+    "question": "What is envisioning?",
+    "answer": "Envisioning is a process used before doing a haircut, facial design, flat iron, roller, or rod set."
+    },
+    "8": {
+    "question": "Which facial shape is the normal shape?",
+    "answer": "The normal facial shape is the oval shape."
+    },
+    "9": {
+    "question": "What are the different facial shapes?",
+    "answer": "There are three main facial shapes: oval, oblong, and round."
+    },
+    "10": {
+    "question": "Why should oblong facial types have hairstyles that are short?",
+    "answer": "Oblong facial types should have hairstyles that are short because longer styles will make the face appear longer."
+    },
+    "11": {
+    "question": "Which facial shape is named after a fruit?",
+    "answer": "A facial shape with very wide cheekbones and a narrow chin is called an inverted triangle."
+    },
+    "12": {
+    "question": "What areas of the face should you use long strokes?",
+    "answer": "Long strokes should be used on the jaw area of the face."
+    }
+}
