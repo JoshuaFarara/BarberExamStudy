@@ -329,23 +329,38 @@ function showCard(index) {
   const [key, cardData] = cardsData[index];
   const { question, answer } = cardData;
 
+  // const card = `
+  //   <div class="card">
+  //     <div class="card__inner">
+  //       <div class="card__face card__face--front">
+  //         <div class="card__content">    
+  //           <h2>${key}</h2>
+  //           <p>${question}</p>
+  //         </div>    
+  //       </div>
+  //       <div class="card__face card__face--back">
+  //         <div class="card__content">
+  //           <h2>${key}</h2>  
+  //           <p>${answer}</p>
+  //         </div>        
+  //       </div>
+  //     </div>
+  //   </div>
+  // `;
   const card = `
-    <div class="card">
-      <div class="card__inner">
         <div class="card__face card__face--front">
           <div class="card__content">    
             <h2>${key}</h2>
             <p>${question}</p>
           </div>    
         </div>
-        <div class="card__face card__face--back">
+        <div class="card__face card__face--back--gen">
           <div class="card__content">
             <h2>${key}</h2>  
             <p>${answer}</p>
           </div>        
         </div>
-      </div>
-    </div>
+
   `;
   console.log(cardContainer);
   // console.log(cardsData);

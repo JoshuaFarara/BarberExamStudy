@@ -188,7 +188,7 @@ body {
 }
 
 .card__face--back--gen {
-  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background-image: linear-gradient(to bottom left, var(--primary), var(--secondary));
   display: flex;
   align-items: center;
   justify-content: center;
