@@ -1,6 +1,7 @@
 :root {
   --primary: #433ac5;
   --secondary: #16d1f7;
+  --tertiary: green;
   --dark: #212121;
   --light: #F3F3F3;
 }
@@ -188,7 +189,7 @@ body {
 }
 
 .card__face--back--gen {
-  background-image: linear-gradient(to bottom left, var(--primary), var(--secondary));
+  background-image: linear-gradient(to bottom left, var(--tertiary), var(--secondary));
   display: flex;
   align-items: center;
   justify-content: center;
