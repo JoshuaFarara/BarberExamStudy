@@ -1,16 +1,15 @@
-[
-    {"q1": "What are the 2 layers of the skin called?", "a1":"epidermis = outer layer , dermis = inner layer"},
-    {"q2": "What is the term for classic dandruff?", "a2":"Pityriasis Capitis Simplex"},
-    {"q3": "What is the technical term for ringworm?", "a3":"tinea"},
-    {"q4": "What is the technical term for an inflammatory skin condition?", "a4":"Dermatitis"},
-    {"qS": "What is another name for a blackhead?", "a5":"acne, open comedones"},
-    {"q6": "Which direction are your manipulations for facials?", "a6":"effleurage-light upward motion, toward the origin of the muscle."},
-    {"q7": "What are the 4 types of skin?", "a7":"normal, oily, dry or combination"},
-    {"q8": "What is the protein that makes up nails?", "a8":"keratin"},
-    {"q9": "What are the 4 different facial manipulations?", "a9":"Effleurage, petrissage, tapotement, massager/vibrator"},
-    {"q10": "What does your fingernail rest on?", "a10":"nail bed"},
-    {"q11": "Where is your hyponichium and eponychium?", "a11":"hyponychium - skin in front of toe tip ,eponchium - living skin on top of cuticle"},
-    {"q12": "What is your actual nail called?", "a12":"nail plate"}
-]
-
+{
+    "1": {"question": "What are the 2 layers of the skin called?", "answer": "Epidermis = outer layer, dermis = inner layer"},
+    "2": {"question": "What is the term for classic dandruff?", "answer": "Pityriasis Capitis Simplex"},
+    "3": {"question": "What is the technical term for ringworm?", "answer": "Tinea"},
+    "4": {"question": "What is the technical term for an inflammatory skin condition?", "answer": "Dermatitis"},
+    "5": {"question": "What is another name for a blackhead?", "answer": "Acne, open comedones"},
+    "6": {"question": "Which direction are your manipulations for facials?", "answer": "Effleurage - light upward motion, toward the origin of the muscle."},
+    "7": {"question": "What are the 4 types of skin?", "answer": "Normal, oily, dry, or combination"},
+    "8": {"question": "What is the protein that makes up nails?", "answer": "Keratin"},
+    "9": {"question": "What are the 4 different facial manipulations?", "answer": "Effleurage, petrissage, tapotement, massager/vibrator"},
+    "10": {"question": "What does your fingernail rest on?", "answer": "Nail bed"},
+    "11": {"question": "Where is your hyponychium and eponychium?", "answer": "Hyponychium - skin in front of toe tip, eponychium - living skin on top of cuticle"},
+    "12": {"question": "What is your actual nail called?", "answer": "Nail plate"}
+}
 
