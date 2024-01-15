@@ -296,7 +296,7 @@ let currentIndex = 0;
 let cardsData = [];
 
 // Fetch data from JSON file
-fetch('assets/JSON/chapter7.json')
+fetch('assets/JSON/chapter2.json')
   .then((response) => response.json())
   .then((data) => {
     cardsData = Object.entries(data);
