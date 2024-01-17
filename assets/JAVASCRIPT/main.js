@@ -21,34 +21,86 @@ const restartButton = document.querySelector('#restart');
 let currentIndex = 0;
 let cardsData = [];
 
-// Fetch data from JSON file
-fetch('assets/JSON/chapter2.json')
-  .then((response) => response.json())
-  .then((data) => {
-    cardsData = Object.entries(data);
-    showCard(currentIndex); // Display the first card
 
-    nextButton.addEventListener('click', () => {
-      currentIndex++;
-      if (currentIndex < cardsData.length) {
-        showCard(currentIndex);
-      } else {
-        // Handle reaching the end of cards
-        alert('End of cards');
-      }
-    });
+// Fetch data from JSON file for dynmic cards 
+// fetch('assets/JSON/chapter3.json')
+//   .then((response) => response.json())
+//   .then((data) => {
+//     cardsData = Object.entries(data);
+//     showCard(currentIndex); // Display the first card
 
-    previousButton.addEventListener('click', function() {
-        currentIndex--;
-        showCard(currentIndex);
-    });
+//     nextButton.addEventListener('click', () => {
+//       currentIndex++;
+//       if (currentIndex < cardsData.length) {
+//         showCard(currentIndex);
+//       } else {
+//         // Handle reaching the end of cards
+//         alert('End of cards');
+//       }
+//     });
 
-    restartButton.addEventListener('click', () => {
-      currentIndex = 0;
+//     previousButton.addEventListener('click', function() {
+//         currentIndex--;
+//         showCard(currentIndex);
+//     });
+
+//     restartButton.addEventListener('click', () => {
+//       currentIndex = 0;
+//       showCard(currentIndex);
+//     });
+//   })
+//   .catch(error => console.error(error));
+
+// Adding the chapter sidebar dynamic feature
+function fetchData(chapter) {
+  fetch(`assets/JSON/${chapter}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      cardsData = Object.entries(data);
+      currentIndex = 0; // Reset index when changing chapters
       showCard(currentIndex);
-    });
-  })
-  .catch(error => console.error(error));
+     
+      nextButton.addEventListener('click', () => {
+        currentIndex++;
+        if (currentIndex < cardsData.length) {
+          showCard(currentIndex);
+        } else {
+          // Handle reaching the end of cards
+          alert('End of cards');
+        }
+      });
+  
+      previousButton.addEventListener('click', function() {
+          currentIndex--;
+          showCard(currentIndex);
+      });
+  
+      restartButton.addEventListener('click', () => {
+        currentIndex = 0;
+        showCard(currentIndex);
+      });
+    })
+    .catch(error => console.error(error));
+}
+
+// fetchData('chapter3')
+
+const sidebarLinks = document.querySelectorAll('.nav-link');
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    // const chapter = link.textContent.trim().toLowerCase().replace(/\s/g, '-');
+    const chapter = link.dataset.chapter;
+    fetchData(chapter);
+
+    // Close the off-canvas menu
+    const offcanvasExample = new bootstrap.Offcanvas(document.getElementById('offcanvasExample'));
+    offcanvasExample.hide();
+  });
+});
+
 
 // Function to display a specific card
 function showCard(index) {
