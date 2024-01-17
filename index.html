@@ -47,29 +47,65 @@
   <h3>Below you can choose a deck of cards to start studying with them.</h3>
 
   <hr>
+<!-- OffCanvas components-->
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Select a Chapter Deck
+</a>
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Button with data-bs-target
+</button> -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Chapter Decks</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <p>Select the chapter you would like to study!</p>
+    </div>
+    <div>
+      <a class="nav-link" data-chapter="chapter1">Chapter 1</a>
+      <!-- <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+      </nav> -->
+      <a class="nav-link" data-chapter="chapter2">Chapter 2</a>
+      <a class="nav-link" data-chapter="chapter3">Chapter 3</a>
+      <a class="nav-link" data-chapter="chapter4">Chapter 4</a>
+      <a class="nav-link" data-chapter="chapter5">Chapter 5</a>
+      <a class="nav-link" data-chapter="chapter6">Chapter 6</a>
+      <a class="nav-link" data-chapter="chapter7">Chapter 7</a>
+      <a class="nav-link" data-chapter="chapter8">Chapter 8</a>
+    </div>
+  </div>
+</div>
+
+<!-- OffCanvas components ended-->
+
 
 <!-- Sidebar -->
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-2">
       <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
         <nav class="nav nav-pills flex-column">
           <h4>Chapters</h4>
-          <a class="nav-link" href="#item-1">Chapter 1</a>
-          <!-- <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#Chapter-1">Chapter 1</a>
+          <nav class="nav nav-pills flex-column">
             <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
             <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-          </nav> -->
-          <a class="nav-link" href="#item-2">Chapter 2</a>
-          <a class="nav-link" href="#item-3">Chapter 3</a>
-          <a class="nav-link" href="#item-3">Chapter 4</a>
-          <a class="nav-link" href="#item-3">Chapter 5</a>
-          <a class="nav-link" href="#item-3">Chapter 6</a>
-          <a class="nav-link" href="#item-3">Chapter 7</a>
-          <a class="nav-link" href="#item-3">Chapter 8</a>
+          </nav>
+          <a class="nav-link" href="#Chapter-2">Chapter 2</a>
+          <a class="nav-link" href="#Chapter-3">Chapter 3</a>
+          <a class="nav-link" href="#Chapter-4">Chapter 4</a>
+          <a class="nav-link" href="#Chapter-5">Chapter 5</a>
+          <a class="nav-link" href="#Chapter-6">Chapter 6</a>
+          <a class="nav-link" href="#Chapter-7">Chapter 7</a>
+          <a class="nav-link" href="#Chapter-8">Chapter 8</a>
 
         </nav>
       </nav>
-    </div>
+    </div> -->
 
     <!-- <div class="col-3">
       <h4>Chapters</h4>
