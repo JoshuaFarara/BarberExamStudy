@@ -23,33 +23,33 @@ let cardsData = [];
 
 
 // Fetch data from JSON file for dynmic cards 
-// fetch('assets/JSON/chapter3.json')
-//   .then((response) => response.json())
-//   .then((data) => {
-//     cardsData = Object.entries(data);
-//     showCard(currentIndex); // Display the first card
+fetch('assets/JSON/chapter3.json')
+  .then((response) => response.json())
+  .then((data) => {
+    cardsData = Object.entries(data);
+    showCard(currentIndex); // Display the first card
 
-//     nextButton.addEventListener('click', () => {
-//       currentIndex++;
-//       if (currentIndex < cardsData.length) {
-//         showCard(currentIndex);
-//       } else {
-//         // Handle reaching the end of cards
-//         alert('End of cards');
-//       }
-//     });
+    nextButton.addEventListener('click', () => {
+      currentIndex++;
+      if (currentIndex < cardsData.length) {
+        showCard(currentIndex);
+      } else {
+        // Handle reaching the end of cards
+        alert('End of cards');
+      }
+    });
 
-//     previousButton.addEventListener('click', function() {
-//         currentIndex--;
-//         showCard(currentIndex);
-//     });
+    previousButton.addEventListener('click', function() {
+        currentIndex--;
+        showCard(currentIndex);
+    });
 
-//     restartButton.addEventListener('click', () => {
-//       currentIndex = 0;
-//       showCard(currentIndex);
-//     });
-//   })
-//   .catch(error => console.error(error));
+    restartButton.addEventListener('click', () => {
+      currentIndex = 0;
+      showCard(currentIndex);
+    });
+  })
+  .catch(error => console.error(error));
 
 // Adding the chapter sidebar dynamic feature
 function fetchData(chapter) {
