@@ -33,3 +33,5 @@ Subjects and chapters are dynamically populated, ensuring a streamlined and pers
 
 
 This Master Barber Theoretical Exam Prep Website aims to offer a comprehensive and user-friendly tool for effective exam preparation, combining detailed content with an interactive and visually appealing interface.
+
+### Run The Web Appplication
