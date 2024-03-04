@@ -23,7 +23,7 @@ let cardsData = [];
 
 
 // Fetch data from JSON file for dynmic cards 
-fetch('assets/JSON/chapter3.json')
+fetch('assets/JSON/chapter5.json')
   .then((response) => response.json())
   .then((data) => {
     cardsData = Object.entries(data);
